@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Montserrat:wght@300&family=Open+Sans:ital,wght@1,300&family=Roboto&family=Rubik+Marker+Hatch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+
+* {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    /*
+    font-family: 'Gemunu Libre', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik Marker Hatch', cursive;
+    */
+    font-family: var(--fontRoboto);
+}
+
+
+
+:root {
+    --error: #ef3038;
+    --gray: #6d6f7d;
+    --orange: #bc4f27;
+    --textColor: white;
+    --scrollBarBgColor: #282828;
+
+    --fontOpenSans: 'Open Sans', sans-serif;
+    --fontMontserrat: 'Montserrat', sans-serif;
+    --fontGemunuLibre: 'Gemunu Libre', sans-serif;
+    --fontRubikMarkerHatch: 'Rubik Marker Hatch', sans-serif;
+    --fontRoboto: 'Roboto', sans-serif;
+    --fontPoppins: 'Poppins', sans-serif;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.none {
+    display: none;
+}
+
+
+body {
+    scroll-behavior: smooth;
+}
+
+
+#section_container {
+    padding: 2rem;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section .card_view {
+    width: fit-content;
+    padding: clamp(0.5rem, 1vw, 3rem) clamp(0.5rem, 3rem + 1vw, 3rem);
+    margin-bottom: 2rem;
+}
+
+.section_header {
+    margin-bottom: 1rem;
+}
+
+.section_header h4 {
+    color: var(--orange);
+    margin-bottom: 1rem;
+    font-family: var(--fontRubikMarkerHatch);
+    font-weight: bold;
+}
+
+.section p {
+    margin: 0.5rem;
+}
+
+/* ============================= CARD VIEW ============================= */
+
+
+.card_view {
+    position: relative;
+    background-color: var(--gray);
+    padding: clamp(0.5rem, 1rem + 1vw, 3rem);
+    color: var(--textColor);
+    font-weight: 500;
+    font-family: var(--fontPoppins);
+}
+
+.card_view::after,
+.card_view::before {
+    position: absolute;
+    content: "";
+    background-color: var(--orange);
+    width: 1rem;
+    opacity: 0.8;
+}
+
+.card_view::after {
+    top: -25%;
+    bottom: -25%;
+    right: 0;
+    height: 150%;
+}
+
+.card_view::before {
+    left: 0;
+    height: 50%;
+    bottom: -25%;
+}
+
+
+/* ============================ SECTION HOME ============================ */
+#home {
+    position: relative;
+    height: 100vh;
+}
+
+#home_logo {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 2%;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.home_nav_toggle {
+    position: fixed;
+    cursor: pointer;
+    top: 5%;
+    right: 2%;
+    font-size: 1.5rem;
+    background-color: var(--orange);
+    color: var(--textColor);
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    z-index: 2;
+}
+
+
+#home_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#home_card_view {
+    width: 60%;
+    position: absolute;
+}
+
+#home_nav {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    padding: 1rem;
+    background-color: var(--textColor);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: fit-content;
+    transition: all 500ms ease-in-out;
+    overflow-y: scroll;
+}
+
+#home_nav::-webkit-scrollbar {
+    width: 0rem;
+}
+
+.home_nav_display {
+    right: 0% !important;
+}
+
+#home_nav_header {
+    justify-content: flex-end;
+}
+
+#home_nav_header i {
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+#home_nav_links {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: .5rem;
+}
+
+#home_nav a {
+    color: black !important;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    width: 100%;
+    margin: 0.3rem;
+}
+
+#home_nav a:hover {
+    background-color: var(--orange);
+    color: var(--textColor) !important;
+    transition: all 300ms ease-in-out;
+}
+
+/*  */
+
+#main_body {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: "section_container donate_container";
+}
+
+#section_container {
+    grid-area: section_container;
+}
+
+#donate_container {
+    grid-area: donate_container;
+    padding: 2rem;
+}
+
+#donate_container_title {
+    background-color: var(--orange);
+    color: var(--textColor);
+    border-radius: 2.5rem;
+    padding: 1.2rem 5rem;
+    width: fit-content;
+    font-family: var(--fontPoppins);
+    margin-bottom: 1rem;
+}
+
+#donate_container h4 {
+    margin: 1rem 0rem;
+    font-size: var(--fontPoppins);
+    /* color: var(--orange); */
+    border-bottom: 0.4rem solid var(--orange);
+    width: fit-content;
+    padding: 0.3rem;
+}
+
+/* ============================ SECTION MISSION ============================ */
+
+#our_team_text span {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+#our_team_list span {
+    color: var(--orange);
+}
+
+
+/*  */
+
+#ministries img {
+    width: 100%;
+
+}
+
+#ministries h4 {
+    margin: 1rem 0rem;
+    font-weight: bold;
+    font-family: var(--fontPoppins);
+}
+
+
+
+/*  */
+
+
+#footer_party_one {
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    border-top: 0.1rem solid var(--gray);
+    padding: 3rem;
+}
+
+#footer_party_one img {
+    height: 8rem;
+}
+
+#footer_party_one p {
+    margin-bottom: 0.3rem;
+}
+
+#footer_party_one a {
+    color: var(--orange);
+}
+
+#footer_party_two {
+    background-color: var(--gray);
+    background-color: var(--orange);
+    color: var(--textColor);
+    font-family: var(--fontPoppins);
+    text-align: center;
+    padding: 2rem;
+}
+
+#footer_ong_name {
+    background-color: var(--orange);
+    font-family: var(--fontPoppins);
+    color: var(--textColor);
+    padding: 0.5rem 2rem;
+    width: fit-content;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem !important;
+}
+
+#footer_party_two p {
+    margin-bottom: 0.5rem;
+}
+
+#footer_party_two a {
+    font-weight: bold;
+    color: var(--textColor);
+}

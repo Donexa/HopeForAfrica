@@ -1,0 +1,33 @@
+@media (max-width: 725px) {
+
+    #home_nav_header i {
+        font-size: 1.5rem;
+    }
+
+    #home {
+        width: 100% !important;
+    }
+
+    #home_logo {
+        height: 8rem;
+        left: 0%;
+    }
+
+    #home_card_view {
+        width: 100%;
+    }
+
+    #main_body {
+        display: block;
+    }
+
+    #section_container {
+        padding: 2rem 0.8rem;
+    }
+
+
+    #footer_party_one {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
