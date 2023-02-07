@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Montserrat:wght@300&family=Open+Sans:ital,wght@1,300&family=Roboto&family=Rubik+Marker+Hatch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+
+* {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+    font-size: 1.05rem;
+    /*
+    font-family: 'Gemunu Libre', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik Marker Hatch', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    */
+    font-family: var(--fontRoboto);
+    font-family: 'Signika Negative', sans-serif;
+}
+
+p {
+    line-height: 1.5rem;
+
+}
+
+
+:root {
+    --error: #ef3038;
+    --gray: #6d6f7d;
+    --orange: #bc4f27;
+    --textColor: white;
+    --scrollBarBgColor: #282828;
+
+    --fontOpenSans: 'Open Sans', sans-serif;
+    --fontMontserrat: 'Montserrat', sans-serif;
+    --fontGemunuLibre: 'Gemunu Libre', sans-serif;
+    --fontRubikMarkerHatch: 'Rubik Marker Hatch', sans-serif;
+    --fontRoboto: 'Roboto', sans-serif;
+    --fontPoppins: 'Poppins', sans-serif;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.none {
+    display: none;
+}
+
+
+.title_bold_1 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: var(--fontPoppins);
+}
+
+
+.title_bold_2 {
+    font-size: 1.5rem;
+    font-family: var(--fontPoppins);
+}
+
+
+body {
+    scroll-behavior: smooth;
+}
+
+
+#section_container {
+    padding: 2rem;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section_bgg {
+    background-color: var(--gray);
+    padding: 2rem;
+    color: var(--textColor);
+}
+
+.section .card_view {
+    width: fit-content;
+    padding: clamp(0.5rem, 1vw, 3rem) clamp(0.5rem, 3rem + 1vw, 3rem);
+    margin-bottom: 2rem;
+}
+
+.section_header {
+    margin-bottom: 0.7rem;
+    background-color: var(--gray);
+    color: var(--textColor);
+    padding: 0.5rem;
+}
+
+.section_header h4 {
+    border: 0.1rem solid var(--orange);
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-family: var(--fontRubikMarkerHatch);
+    font-weight: bold;
+}
+
+.section_header_contenair {}
+
+
+.section_header_contenair img {
+    width: 30%;
+}
+
+
+.section p {
+    margin: 0.5rem;
+}
+
+/* ====================================================================== */
+
+
+#WhoWeAre {
+    background-image: linear-gradient(to bottom, transparent, #bc4f27),
+        url('../Old/img/IMG-20230204-WA0000.jpg');
+    height: 70vh;
+    background-size: cover;
+    color: white;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#HowWeWork,
+#ProgramIntervention,
+#TheHopeForAfricaPromise {
+    background-color: var(--orange);
+    color: var(--textColor);
+    padding: 1rem;
+}
+
+
+#OurHistoryHeader {
+    background-image: linear-gradient(to bottom, transparent, #bc4f27),
+        url('../Old/img/IMG-20230204-WA0002.jpg');
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-size: cover;
+    color: white;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+
+#OurMotto .title_bold_1 {
+    font-size: 3rem;
+    margin: 2rem 0rem;
+}
+
+
+#OurTrusteesProfile {
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+
+
+.trustee {
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.trustee_image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--orange);
+}
+
+.trustee_name {
+    font-weight: bold;
+}
+
+
+#OurTeamProfile {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.our_team {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    color: var(--textColor);
+    cursor: pointer;
+}
+
+.our_team_img {
+    width: 13rem;
+    height: 13rem;
+}
+
+.our_team_carpet,
+.our_team_detail {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.our_team_carpet {
+    background-color: var(--orange);
+}
+
+.our_team_detail {
+    flex-direction: column;
+    text-align: center;
+}
+
+.our_team_name {
+    font-weight: bold;
+}
+
+.our_team:hover .our_team_carpet {
+    transition: all 500ms ease-in;
+    background-color: rgba(188, 79, 39, 0.6);
+}
+
+
+
+
+#ministries_image_1 {
+    background-image: linear-gradient(to bottom, transparent, #bc4f27),
+        url('../Old/img/35b96d8346aa4f19a3d51557784a5de8_6.jpeg.jpg');
+    /* background-repeat: no-repeat; */
+    height: 50vh;
+    background-size: cover;
+    color: white;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#ministries_text {
+    background-color: var(--orange);
+    color: var(--textColor);
+    padding: 1rem;
+}
+
+#ministries_image_2 {
+    background-image: linear-gradient(to bottom, transparent, #fff),
+        url('../Old/img/wht-close-up-smiley-african-kid.jpg');
+    /* background-repeat: no-repeat; */
+    height: 55vh;
+    background-size: cover;
+    color: white;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#ministries_image_2 .title_bold_2 {
+    color: var(--orange);
+}
+
+.ulcustom li::marker {
+    color: var(--orange);
+    font-size: 1.2rem;
+    padding-inline-start: 1rem;
+}
+
+/* .ulcustom li {
+    list-style-type: '👉';
+} */
+
+.OtherActionLI {
+    padding: 2rem;
+}
+
+#OtherActions li::marker {
+    color: var(--orange);
+    font-size: 1.2rem;
+    padding-inline-start: 1rem;
+}
+
+.OtherActionSSF {
+    align-items: flex-start;
+    /* background-color: red; */
+    justify-content: space-between;
+}
+
+.OtherActionSSF p {
+    width: 70%;
+}
+
+.OtherActionSSF img {
+    width: 40%;
+    height: 35vh;
+    object-fit: cover;
+}
+
+#HTHOCI_RDC,
+#CTOOP {
+    padding: 1rem;
+}
+
+#HTHOCI_RDC {
+    background-color: var(--orange);
+    color: var(--textColor);
+}
+
+#CTOOP h3,
+#CTOOP h4 {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+
+
+#bank_infos {
+    justify-content: space-between;
+}
+
+
+.bank_info_item {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    min-height: 30vh;
+    width: 45%;
+    background-color: var(--orange);
+    color: var(--textColor);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+#footer_ong_name {
+    background-color: var(--orange);
+    padding: 1rem;
+    width: fit-content;
+    color: var(--textColor);
+}
+
+/* ============================= CARD VIEW ============================= */
+
+
+.card_view {
+    position: relative;
+    background-color: var(--gray);
+    padding: clamp(0.5rem, 1rem + 1vw, 3rem);
+    color: var(--textColor);
+    font-weight: 500;
+    font-family: var(--fontPoppins);
+}
+
+.card_view::after,
+.card_view::before {
+    position: absolute;
+    content: "";
+    background-color: var(--orange);
+    width: 1rem;
+    opacity: 0.8;
+}
+
+.card_view::after {
+    top: -25%;
+    bottom: -25%;
+    right: 0;
+    height: 150%;
+}
+
+.card_view::before {
+    left: 0;
+    height: 50%;
+    bottom: -25%;
+}
+
+
+
+.card_view_1 {
+    background-color: var(--orange);
+    font-weight: 500;
+    font-family: var(--fontPoppins);
+    padding: 1rem;
+    color: var(--textColor);
+    border-radius: 1.5rem;
+}
+
+
+
+
+/* ============================ SECTION HOME ============================ */
+#home {
+    position: relative;
+    height: 100vh;
+}
+
+#home_logo {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 2%;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.home_nav_toggle {
+    position: fixed;
+    cursor: pointer;
+    top: 5%;
+    right: 2%;
+    font-size: 1.5rem;
+    background-color: var(--orange);
+    color: var(--textColor);
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    z-index: 2;
+}
+
+
+#home_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#home_card_view {
+    width: 60%;
+    position: absolute;
+}
+
+#home_nav {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    padding: 1rem;
+    background-color: var(--textColor);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: fit-content;
+    transition: all 500ms ease-in-out;
+    overflow-y: scroll;
+}
+
+#home_nav::-webkit-scrollbar {
+    width: 0rem;
+}
+
+.home_nav_display {
+    right: 0% !important;
+}
+
+#home_nav_header {
+    justify-content: flex-end;
+}
+
+#home_nav_header i {
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+#home_nav_links {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: .5rem;
+}
+
+#home_nav a {
+    color: black !important;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    width: 100%;
+    margin: 0.3rem;
+}
+
+#home_nav a:hover {
+    background-color: var(--orange);
+    color: var(--textColor) !important;
+    transition: all 300ms ease-in-out;
+}
+
+
+
+/*  */
+
+
+
+#main_body {
+    /* position: sticky; */
+    /* top: 0; */
+    flex-direction: column;
+    /* background-image: linear-gradient(to bottom, transparent, #bc4f27), url('../Old/img/logo.png'); */
+    background-image: url('../Old/img/logo.png');
+    background-repeat: repeat;
+    /* height: 50vh; */
+    background-size: contain;
+    /* color: white;
+            padding: 2rem;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start; */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+
+#section_container {
+    width: 70%;
+    background-color: var(--textColor);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+footer {
+    flex-direction: column;
+    background-color: var(--orange);
+    /* background-color: var(--textColor); */
+    color: var(--textColor);
+    padding: 5%;
+}
+
+/* ============================================================================================================== */
+
+
+.no_vsb {
+    opacity: 0;
+    transform: translateY(1rem) translateX(-0rem);
+}
+
+.vsb {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+    transition: all 1.2s cubic-bezier(0.5, 0, 0, 1);
+}

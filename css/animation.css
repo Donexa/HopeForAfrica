@@ -1,0 +1,16 @@
+.scale1 {
+    transition: all 300ms ease;
+}
+
+.scale1:hover {
+    cursor: pointer;
+    transform: scale(1.2) rotate(15deg);
+}
+
+.scale2 {
+    transition: all 300ms ease;
+}
+
+.scale2:hover {
+    transform: scale(1.1);
+}
