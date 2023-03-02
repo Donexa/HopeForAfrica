@@ -19,3 +19,18 @@ function callback(entries, observer) {
 }
 const observer = new IntersectionObserver(callback, options);
 window.addEventListener("load", () => document.querySelectorAll(".no_vsb").forEach(element => observer.observe(element)));
+
+//
+const templates = document.querySelectorAll(".template");
+document.querySelectorAll(".home_nav_link").forEach(link => {
+    link.onclick = e => {
+        e.stopPropagation();
+        templates.forEach(template => {
+            let link_ = e.target.getAttribute("href").split("#")[1];
+            if (template.getAttribute("class").includes(link_)) {
+                return template.classList.remove("tpl-ivb");
+            };
+            template.classList.add("tpl-ivb");
+        })
+    };
+});
