@@ -41,6 +41,11 @@ p {
 }
 
 
+.tpl-ivb {
+    display: none;
+}
+
+
 .flex {
     display: flex;
     justify-content: center;
@@ -534,8 +539,8 @@ footer {
 
 
 .no_vsb {
-    opacity: 0;
-    transform: translateY(1rem) translateX(-0rem);
+    opacity: 0 !important;
+    transform: translateY(1rem) translateX(-0rem) !important;
 }
 
 .vsb {
