@@ -8,13 +8,7 @@
     margin: 0rem;
     box-sizing: border-box;
     font-size: 1.05rem;
-    /*
-    font-family: 'Gemunu Libre', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Rubik Marker Hatch', cursive;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    */
+
     font-family: var(--fontRoboto);
     font-family: 'Signika Negative', sans-serif;
 }
