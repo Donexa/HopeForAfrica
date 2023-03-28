@@ -118,13 +118,13 @@ function Trustee({ name }) {
 }
 function OurTrustees() {
   const Data = [
-    { name: "Eliphaz B. Lukendobonga" },
+    { name: "Bashilwango L. Eliphaz" },
     { name: "Angelina A. Bilubi" },
-    { name: "Jules F. Icimbuelo" },
+    { name: "ICIMBUELO FALIALA Jules" },
     { name: "Albert E. Mwenebatu" },
     { name: "Brigitte E. Asifiwe" },
     { name: "Marie Bantu" },
-    { name: "Ronald Storey" },
+    { name: "Ron Storey" },
   ];
   return (
     <React.Fragment>
