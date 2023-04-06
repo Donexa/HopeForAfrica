@@ -155,30 +155,30 @@ function OurTeams() {
         "https://res.cloudinary.com/dl6s23xuz/image/upload/v1675679837/Hope4AfricaTeam/Eliphaz_Bashilwango_Founder_CEO-01_npu0dn.png",
       post: "Founder CEO",
     },
-    {
-      name: "Brigitte E ASIFIWE",
-      image:
-        "https://res.cloudinary.com/dl6s23xuz/image/upload/v1675679966/Hope4AfricaTeam/Brigitte_E._ASIFIWE-01_pnyxch.png",
-      post: "",
-    },
-    {
-      name: "Ron Storey",
-      image:
-        "https://res.cloudinary.com/dl6s23xuz/image/upload/v1675679941/Hope4AfricaTeam/Ron_Storey-01_nigcod.png",
-      post: "",
-    },
-    {
-      name: "ICIMBUELO FALIALA Jules",
-      image:
-        "https://res.cloudinary.com/dl6s23xuz/image/upload/v1675679865/Hope4AfricaTeam/ICIMBUELO_FALIALA_Jules-01_ceogn0.png",
-      post: "",
-    },
-    {
-      name: "Marie BANTU",
-      image:
-        "https://res.cloudinary.com/dl6s23xuz/image/upload/v1675679945/Hope4AfricaTeam/Marie_BANTU-01_gf7hf3.png",
-      post: "",
-    },
+    // {
+    //   name: "Brigitte E ASIFIWE",
+    //   image:
+    //     "https://res.cloudinary.com/dl6s23xuz/image/upload/v1675679966/Hope4AfricaTeam/Brigitte_E._ASIFIWE-01_pnyxch.png",
+    //   post: "",
+    // },
+    // {
+    //   name: "Ron Storey",
+    //   image:
+    //     "https://res.cloudinary.com/dl6s23xuz/image/upload/v1675679941/Hope4AfricaTeam/Ron_Storey-01_nigcod.png",
+    //   post: "",
+    // },
+    // {
+    //   name: "ICIMBUELO FALIALA Jules",
+    //   image:
+    //     "https://res.cloudinary.com/dl6s23xuz/image/upload/v1675679865/Hope4AfricaTeam/ICIMBUELO_FALIALA_Jules-01_ceogn0.png",
+    //   post: "",
+    // },
+    // {
+    //   name: "Marie BANTU",
+    //   image:
+    //     "https://res.cloudinary.com/dl6s23xuz/image/upload/v1675679945/Hope4AfricaTeam/Marie_BANTU-01_gf7hf3.png",
+    //   post: "",
+    // },
     {
       name: "Sifa Bilubi Elizabeth",
       image:
@@ -207,7 +207,7 @@ function OurTeams() {
       name: "Ombeni Nyota Jeanne",
       image:
         "https://res.cloudinary.com/dl6s23xuz/image/upload/v1675679975/Hope4AfricaTeam/Ombeni_Nyota_Jeanne_d_Arc_Operations-01_x2rik2.png",
-      post: "M.E.A.L (Monitoring evaluation accountability learning)",
+      post: "M.E.A.L",
     },
     {
       name: "Hassan R. John",
@@ -280,9 +280,5 @@ function OurTeams() {
 }
 
 ReactDOM.createRoot(document.getElementById("OurValues")).render(<OurValues />);
-ReactDOM.createRoot(document.getElementById("OurTrusteesProfile")).render(
-  <OurTrustees />
-);
-ReactDOM.createRoot(document.getElementById("OurTeamProfile")).render(
-  <OurTeams />
-);
+ReactDOM.createRoot(document.getElementById("OurTrusteesProfile")).render(<OurTrustees />);
+ReactDOM.createRoot(document.getElementById("OurTeamProfile")).render(<OurTeams />);
